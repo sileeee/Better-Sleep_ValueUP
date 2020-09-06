@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/main"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btGoAlarm"
+        android:layout_width="370dp"
+        android:layout_height="370dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="220dp"
+        android:background="@drawable/alarmmain"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btGoBluetooth"
+        android:layout_width="370dp"
+        android:layout_height="370dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/bluetoothmain"
+        app:layout_constraintStart_toEndOf="@+id/btGoAlarm"
+        app:layout_constraintTop_toTopOf="@+id/btGoAlarm" />
+
+    <Button
+        android:id="@+id/btGoSensor"
+        android:layout_width="370dp"
+        android:layout_height="370dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/sensormain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btGoAlarm" />
+
+    <Button
+        android:id="@+id/btGoCalendar"
+        android:layout_width="370dp"
+        android:layout_height="370dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/calendarmain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/btGoSensor"
+        app:layout_constraintTop_toTopOf="@+id/btGoSensor" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".shakeSensor">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/main"
+        tools:ignore="MissingConstraints"/>
+
+    <Button
+        android:id="@+id/aboutsensor"
+        android:layout_width="700dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="250dp"
+        android:text="센서가 작동 중입니다"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#808080"
+        android:background="@drawable/btn_white"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/aboutsensor"
+        android:layout_marginTop="40dp"
+        android:textSize="15dp"
+        android:textColor="#808080"
+        android:gravity="center_horizontal"
+        android:text="안드로이드 기기 내에 내장된 자이로 센서, 가속도 센서가\n
+   수면 중 당신의 움직임을 측정합니다." />
+
+    <TextView
+        android:id="@+id/gyroY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gyroX"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:text="y좌표 : " />
+
+    <TextView
+        android:id="@+id/gyroX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="624dp"
+        android:text="x좌표 : " />
+
+    <TextView
+        android:id="@+id/tiltText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/axisZ"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="1dp"
+        android:text="tilt:" />
+
+    <TextView
+        android:id="@+id/axisX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gyroZ"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:text="axisX:" />
+
+    <TextView
+        android:id="@+id/axisY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/axisX"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="1dp"
+        android:text="axisY:" />
+
+    <TextView
+        android:id="@+id/axisZ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/axisY"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:text="axisZ:" />
+
+    <TextView
+        android:id="@+id/gyroZ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gyroY"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="1dp"
+        android:text="z좌표 : " />
+
+    <Button
+        android:id="@+id/btGoHome"
+        android:layout_width="700dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="880dp"
+        android:background="@drawable/btn_white"
+        android:text="BACK" />
+
+</RelativeLayout>
